@@ -1,13 +1,16 @@
 name: Schedule Job
 
-  on:
+on:
     schedule:
-        - cron:"0 0 * * *"
+        - cron: "0 0 * * *"
 
-    jobs: 
+  jobs: 
         run-script:
         runs-on: ubuntu-latest
 
         steps: 
           -name: Print message
           run: echo "Scheduled Job Executed"
+
+          name: Schedule Job
+
